@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import Hero from "../components/Hero";
 import LazyLoadWrapper from "../components/LazyLoadWrapper";
+import HeroSkeleton from "../components/skeletons/HeroSkeleton";
 
 const FeaturedDestination = lazy(() =>
   import("../components/FeaturedDestination")
@@ -13,7 +14,7 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <Suspense fallback="Yükleniyor...">
+      <Suspense fallback={<HeroSkeleton />}>
        
 
         {/* <ExclusiveOffers /> */}

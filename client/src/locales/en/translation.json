@@ -33,7 +33,7 @@
   "testimonialSubtitle": "You can review the comments of our customers who have been guests of our mansion before here.",
   "readMoreButtonText": "Read More",
   "readLessButtonText": "See Less",
-  "footerLogoText": "We make you feel at home with the hot breakfasts we offer to our guests, our peaceful courtyard and our attentive service. While discovering the fascinating atmosphere of Safranbolu, have an unforgettable experience at Piano Boutique Hotel.",
+  "footerLogoText": "We make you feel at home with the hot breakfasts we offer to our guests, our peaceful courtyard and our attentive service. While discovering the fascinating atmosphere of Safranbolu, have an unforgettable experience at Konak Piano Hotel.",
   "homePage": "Home",
   "rooms": "Rooms",
   "contact": "Contact",
@@ -45,6 +45,7 @@
   "privacyPolicy": "Privacy Policy",
   "contactUs": "Contact Us",
   "contactFormTitle": "You can send your comments, suggestions, complaints and requests via this form.",
+  "contactPageDescription": "You can easily reach us by phone, email or by visiting our hotel directly. We look forward to welcoming you.",
   "contactWithUs": "Contact With Us",
   "writeToUs": "Write to Us",
   "enterprise": "Enterprise",
@@ -136,5 +137,11 @@
       "title": "Seamless Entry",
       "description": "100 per cent of guests gave check-in 5 stars."
     }
-  ]
+  ],
+
+  "room101_desc": "Room Neva 101 is a spacious Deluxe option, perfect for families or groups of friends. With its cozy lighting and open layout, it offers a homely atmosphere. Start your day with a beautiful city view and enjoy complimentary breakfast, free Wi-Fi, and TV access. A comfortable seating area completes the experience for both relaxation and enjoyment.",
+  "room102_desc": "Room Rast 102 is a comfortable Deluxe option ideal for families or groups of friends. Its bright atmosphere and spacious layout offer a welcoming environment. Enjoy a pleasant stay with a city view, complimentary breakfast, free Wi-Fi, and TV access. The air conditioning ensures a cool and relaxing experience, especially during summer.",
+  "room103_desc": "Room Uşşak 103 is a spacious and cozy Deluxe room accommodating up to 3 guests. It includes complimentary breakfast, free Wi-Fi, and TV access. Its standout feature is the ultra-large bathroom, offering ample space, a roomy layout, and a modern shower area—designed for maximum comfort and convenience.",
+  "room201_desc": "Room Saba 201 offers a cozy and peaceful stay with its wooden ceiling details and warm lighting. Ideal for couples, this Standard Room accommodates up to 2 guests. Enjoy complimentary breakfast, free Wi-Fi, and TV access for a comfortable experience. A calm and intimate atmosphere makes it a perfect getaway.",
+  "room204_desc": "Room Nihavend 204 is a comfortable Deluxe room suitable for up to 3 guests. It features a spacious bathroom for added convenience. The layout is thoughtfully designed to provide privacy, with the bed area not directly visible from the entrance. Enjoy complimentary breakfast, free Wi-Fi, and TV access for a relaxing stay."
 }

@@ -134,30 +134,39 @@ export const assets = {
 export const testimonials = [
   {
     id: 1,
-    name: "İnci Şentürk",
-    address: "Tekirdağ, Türkiye",
+    name: "İsmail Aydın",
+    address: "",
     image: randomUser,
     rating: 5,
     review:
-      "Her sene iki kez geldigim safranbolu bu sefer benim icin cok başkaydi ilgi alakalari ve temizlik başta olmak üzere hem Osman beye hemde annesine tesekkurlerimi iletiyorum.. Sabah kahvaltilari gayet yeterli ve odadaki tüm temizlik ve hijyen harikaydi zaten yeni devraldiklari icin gayet güzel özenilmiş. Konum olarakta carsiya cok yakin bir sonraki konaklama adresimiz yine piano butik",
+      "Yaz tatilinde eşimle birlikte kaldık. Otel değil de aile sıcaklığında bir ortam. Hizmet, hijyen ve kalite üst seviyede. Ortam çok otantik, gerçekten bir konak sakini gibi hissediyorsunuz kendinizi. Kahvaltı saatini müşterinin programına göre ayarlamaları çok güzel. Kahvaltı menüsüne ise diyecek söz yok. Safranbolu'ya her gidişimde kalacağım mekan, kesinlikle tavsiye ederim.",
   },
   {
     id: 2,
-    name: "Özge Ekşi",
-    address: "Samsun, Türkiye",
+    name: "Tuğçe Bulut",
+    address: "",
     image: randomUser,
     rating: 4,
     review:
-      "Temizlikleri ve ilgileri çok güzeldi. Odalarının manzarasını da çok sevdim. Eğer yolunuz Safranbolu’ya düşerse mutlaka deneyimlemeniz gereken bir konak.",
+      "Konak Otel'de geçirdiğim zaman gerçekten unutulmazdı. Oda düzeni tertemiz, ferah ve zevkli bir şekilde dekore edilmişti. Küçük detaylara gösterilen özen, kendimi evimde hissetmemi sağladı. Her şey yerli yerindeydi; hem konforlu hem de estetik bir atmosfer yaratılmış. Kahvaltı ise ayrı bi güzellikti! Özellikle ev yapımı reçeller, sıcak poğaçalar ve taze demlenmiş çay güne harika bir başlangıç yapmamı sağladı. Çeşit bol, sunum özenliydi. Konforu ve lezzeti bir arada yaşamak isteyen herkese gönül rahatlığıyla tavsiye ederim. Tekrar gelmek için sabırsızlanıyorum! Ayrıca temizlik, konfor ve misafirperverlik üst düzeydi. Osman Bey ve ailesine teşekkürlerimi iletiyorum.",
   },
   {
     id: 3,
-    name: "Eren Sarıalp",
-    address: "Karabük, Türkiye",
+    name: "Halime Aksaya",
+    address: "",
     image: randomUser,
     rating: 5,
     review:
-      "Eski Osmanlı kültürünü sonuna kadar hissettiren bir konaklama deneyimim oldu. Çalışanlar güler yüzlüydü. Odaların Manzaraları son derece güzel iki gün üç gece kaldım ve çok memnunum. Yolum Karabük'e düşerse mutlaka yine burada konaklarım.",
+      "5 kişilik ailemizle beraber kaldık. Odalar bizi eski zamanlara götürfdü. Hele o mis gibi beyaz sabun kokusu annemin kokusu gibiydi aynı... Ev yapımı kahvaltı, güler yüzlü sahibi ile her şey çok iyiydi. Gönülden tavsiye ederiz ☺️",
+  },
+  {
+    id: 4,
+    name: "Sinan Gökyurt",
+    address: "",
+    image: randomUser,
+    rating: 5,
+    review:
+      "Yıllardır merak ettiğim ve mimari dokusuyla UNESCO tarafından korunmalı miras şehri Safranbolu'ya gezmeye geldiğimde o sıcak ortam ve tarihi konakta konaklama yaptım. Buram buram tarih kokan ve güleryüzlü hizmet aldığım bu konakta Osman Bey'e teşekkür ediyorum. Herkese de şiddetle tavsiye ettiğim aile oteli mutlu ve huzurlu konaklama için piano butik oteli tercih edebilirsiniz.",
   },
 ];
 
@@ -202,7 +211,7 @@ export const roomCommonData = [
 // Hotel Dummy Data
 export const hotelDummyData = {
   _id: "67f76393197ac559e4089b72",
-  name: "Piano Butik Otel",
+  name: "Konak Piano Otel",
   address: "Musalla, Mezarlık Sk. No:13, 78600 Safranbolu/Karabük",
   contact: "+90 544 799 0039",
   city: "Karabük",
@@ -227,7 +236,7 @@ export const roomsDummyData = [
     images: [room101_1, room101_2, room101_3, room101_4],
     fullViewImage: fullView101,
     isAvailable: true,
-    roomDescription: "",
+    roomDescription: "room101_desc",
     createdAt: "2025-04-10T06:26:04.013Z",
     updatedAt: "2025-04-10T06:26:04.013Z",
     __v: 0,
@@ -246,6 +255,7 @@ export const roomsDummyData = [
     images: [room102_1, room102_2, room102_3, room102_4],
     fullViewImage: fullView102,
     isAvailable: true,
+    roomDescription: "room102_desc",
     createdAt: "2025-04-10T06:25:22.593Z",
     updatedAt: "2025-04-10T06:25:22.593Z",
     __v: 0,
@@ -264,6 +274,7 @@ export const roomsDummyData = [
     images: [room201_1, room201_2, room201_3, room201_4],
     fullViewImage: fullView201,
     isAvailable: true,
+    roomDescription: "room201_desc",
     createdAt: "2025-04-10T06:23:20.252Z",
     updatedAt: "2025-04-10T06:23:20.252Z",
     __v: 0,
@@ -282,6 +293,7 @@ export const roomsDummyData = [
     images: [room103_4, room103_1, room103_2, room103_3],
     fullViewImage: fullView102,
     isAvailable: true,
+    roomDescription: "room103_desc",
     createdAt: "2025-04-10T06:24:06.285Z",
     updatedAt: "2025-04-10T06:24:06.285Z",
     __v: 0,
@@ -338,6 +350,7 @@ export const roomsDummyData = [
     images: [room204_1, room204_2, room204_3, room204_4],
     fullViewImage: fullView204,
     isAvailable: true,
+    roomDescription: "room204_desc",
     createdAt: "2025-04-10T06:23:20.252Z",
     updatedAt: "2025-04-10T06:23:20.252Z",
     __v: 0,

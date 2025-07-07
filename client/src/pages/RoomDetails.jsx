@@ -49,19 +49,11 @@ const RoomDetails = () => {
       >
         <div className=" px-4 bg-zinc-900">
           {/* Room Details */}
-          <div className="flex flex-col md:flex-row items-start md:items-center gap-2">
-            <h1 className="text-3xl md:text-4xl font-sour text-gray-100">
+          <div className="flex md:flex-row items-baseline gap-2 whitespace-nowrap truncate text-ellipsis">
+            <h1 className="text-2xl md:text-4xl font-sour text-gray-50">{room.roomName} <span className="font-sans">&gt;</span> </h1>
+            <h1 className="text-2xl md:text-4xl font-sour text-gray-400">
               {t(room.roomType)}{" "}
             </h1>
-            <p className="text-xs font-inter py-1.5 px-3 text-white bg-orange-500 rounded-full">
-              %20 {t("discount")}
-            </p>
-          </div>
-
-          {/* Room Rating */}
-          <div className="flex items-center gap-1 mt-2">
-            <StarRating />
-            <p className="ml-2 text-gray-400">50+ {t("evaluation")}</p>
           </div>
 
           {/* Room Images */}
@@ -161,59 +153,6 @@ const RoomDetails = () => {
             </p>
           </div>
 
-          {/* CheckIn CheckOut Form */}
-          {/* <form className="flex flex-col md:flex-row items-start md:items-center justify-between bg-zinc-800 shadow-[0px_0px_20px_rgba(0,0,0,0.15)] p-6 rounded-xl mx-auto mt-16 max-w-6xl">
-            <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-10 text-gray-200 w-full">
-              <div className="flex flex-col w-full md:w-auto">
-                <label className="font-medium" htmlFor="checkInDate">
-                  {t("check-in")}
-                </label>
-                <input
-                  type="date"
-                  id="checkInDate"
-                  placeholder="Başlangıç"
-                  className="w-full rounded border border-gray-300 px-3 py-2 mt-1.5 outline-none"
-                  required
-                />
-              </div>
-              <div className="w-px h-15 bg-gray-300/70 hidden md:block"></div>
-
-              <div className="flex flex-col w-full md:w-auto">
-                <label className="font-medium" htmlFor="checkOutDate">
-                  {t("check-out")}
-                </label>
-                <input
-                  type="date"
-                  id="checkOutDate"
-                  placeholder="Bitiş"
-                  className="w-full rounded border border-gray-300 px-3 py-2 mt-1.5 outline-none"
-                  required
-                />
-              </div>
-              <div className="w-px h-15 bg-gray-300/70 hidden md:block"></div>
-
-              <div className="flex flex-col w-full md:w-auto">
-                <label className="font-medium" htmlFor="guests">
-                  {t("guests")}
-                </label>
-                <input
-                  type="number"
-                  id="guests"
-                  placeholder="0"
-                  className="w-full rounded border border-gray-300 px-3 py-2 mt-1.5 outline-none"
-                  required
-                />
-              </div>
-            </div>
-
-            <button
-              type="submit"
-              className="bg-orange-700/80 hover:bg-primary-dull active:scale-95 transition-all text-white rounded-md w-full py-2 md:w-80 max-md:mt-6 md:px-8 md:py-4 text-base cursor-pointer mt-6 md:mt-0"
-            >
-              {t("checkAvailability")}
-            </button>
-          </form> */}
-
           {/* Special Amenities Section */}
           {room.specialAmenityDescriptions && (
             <div className="bg-zinc-700/30 p-5 text-white/70 flex gap-5 items-center rounded mt-10">
@@ -227,7 +166,8 @@ const RoomDetails = () => {
           )}
 
           {/* Room Specifications */}
-          <div className="mt-25 space-y-4">
+          <div className="flex flex-col-reverse md:flex-row justify-around items-center mt-10">
+            <div className="space-y-4">
             {roomCommonData.map((spec, index) => (
               <div key={index} className="flex items-center gap-2">
                 <img
@@ -237,7 +177,7 @@ const RoomDetails = () => {
                 />
                 <div>
                   <p className="text-base text-gray-200">{spec.title}</p>
-                  <p className="text-gray-500">{spec.description}</p>
+                  {/* <p className="text-gray-500">{spec.description}</p> */}
                 </div>
               </div>
             ))}
@@ -245,15 +185,13 @@ const RoomDetails = () => {
 
           <div className="max-w-3xl border-y border-gray-300 my-15 py-10 text-gray-500">
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas et
-              ullam fugit eveniet dignissimos molestias eos temporibus nisi
-              quidem consectetur. Sapiente quas blanditiis sed consequuntur
-              reprehenderit maxime, hic quod quaerat.
+              {t(room.roomDescription)}
             </p>
+          </div>
           </div>
 
           {/* Hosted By */}
-          <div className="flex flex-col items-start gap-4">
+          {/* <div className="flex flex-col items-start gap-4">
             <div className="flex gap-4">
               <img
                 src={assets.randomUser}
@@ -273,7 +211,7 @@ const RoomDetails = () => {
             <button className="px-6 py-2.5 mt-4 rounded text-white bg-primary hover:bg-primary-dull transition-all cursor-pointer">
               {t("contact")}
             </button>
-          </div>
+          </div> */}
 
           {/* 360 Viewer */}
           <AnimatePresence>

@@ -33,7 +33,7 @@
   "testimonialSubtitle": "Konağımıza daha önce misafir olan müşterilerimizin yorumlarını buradan inceleyebilirsiniz.",
   "readMoreButtonText": "Devamını Oku",
   "readLessButtonText": "Daha Az Gör",
-  "footerLogoText": "Misafirlerimize sunduğumuz sıcak kahvaltılar, huzur dolu avlumuz ve özenli hizmetimiz ile evinizde hissetmenizi sağlıyoruz. Safranbolu'nun büyüleyici atmosferini keşfederken, Piano Butik Otel’de unutulmaz bir deneyim yaşayın.",
+  "footerLogoText": "Misafirlerimize sunduğumuz sıcak kahvaltılar, huzur dolu avlumuz ve özenli hizmetimiz ile evinizde hissetmenizi sağlıyoruz. Safranbolu'nun büyüleyici atmosferini keşfederken, Konak Piano Otel’de unutulmaz bir deneyim yaşayın.",
   "homePage": "Anasayfa",
   "rooms": "Odalar",
   "contact": "İletişim",
@@ -45,6 +45,7 @@
   "privacyPolicy": "Gizlilik Politikası",
   "contactUs": "Bize Ulaşın",
   "contactFormTitle": "Görüşlerinizi, önerilerinizi, şikayetlerinizi ve taleplerinizi bu formdan iletebilirsiniz.",
+  "contactPageDescription": "Telefon, e-posta veya otelimize doğrudan yapacağınız ziyaret ile bize kolaylıkla ulaşabilirsiniz. Sizi ağırlamaktan mutluluk duyarız.",
   "contactWithUs": "Bizimle İletişime Geçin",
   "writeToUs": "Bize Yazın",
   "enterprise": "Kurumsal",
@@ -136,5 +137,11 @@
       "title": "Sorunsuz Giriş",
       "description": "Misafirlerin %100'ü check-in'e 5 yıldız verdi."
     }
-  ]
+  ],
+
+  "room101_desc": "Neva 101, geniş aileler ve arkadaş grupları için ideal bir Deluxe odadır. Özenle aydınlatılmış dekoru ve ferah yapısıyla sıcak bir atmosfer sunar. Şehir manzarası eşliğinde güne başlayabilir, ücretsiz kahvaltı ve Wi-Fi hizmetinden faydalanabilirsiniz. Rahat oturma alanı ve TV erişimi ile hem dinlenmek hem de keyifli vakit geçirmek mümkün.",
+  "room102_desc": "Rast 102, geniş aileler ve arkadaş grupları için konforlu bir Deluxe seçenektir. Aydınlatması ve ferah düzeniyle sıcak bir ortam sunar. Şehir manzarası, ücretsiz kahvaltı, Wi-Fi ve TV erişimi ile keyifli bir konaklama sağlar. Ayrıca klima ile yaz aylarında serin ve rahat bir deneyim yaşarsınız.",
+  "room103_desc": "Uşşak 103, 3 kişiye kadar konaklama imkânı sunan ferah ve konforlu bir Deluxe odadır. Ücretsiz kahvaltı, Wi-Fi ve TV erişimi gibi olanaklarla donatılmıştır. Özellikle geniş kullanım alanı sunan banyosu, rahat hareket imkânı ve modern duş bölmesiyle konuklarına ekstra konfor sağlar.",
+  "room201_desc": "Ahşap tavan detayları ve sıcak ışıklarla donatılmış Oda Saba 201, konforlu bir konaklama için ideal bir tercihtir. Maksimum 2 kişilik kapasitesiyle çiftler için uygundur. Ücretsiz kahvaltı, Wi-Fi ve TV erişimi gibi olanaklarla rahat bir deneyim sunar. Sessiz, huzurlu ve samimi atmosferiyle dikkat çeker.",
+  "room204_desc": "Nihavend 204, konforlu yapısıyla 3 kişiye kadar konaklama imkânı sunan özel bir Deluxe odadır. Geniş banyosu sayesinde rahat bir kullanım alanı sunar. Oda düzeni, girişten yatağın doğrudan görünmesini engelleyecek şekilde tasarlanmıştır. Ücretsiz kahvaltı, Wi-Fi ve TV erişimiyle huzurlu bir konaklama sunar."
 }

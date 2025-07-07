@@ -27,10 +27,10 @@ const HotelCard = ({ room }) => {
               {room.category} {t("roomsText")}
             </span>
           </p>
-          <div className="flex items-center gap-1">
+          {/* <div className="flex items-center gap-1">
             <img src={assets.starIconFilled} alt="star-icon" />
             {room.score}
-          </div>
+          </div> */}
         </div>
 
         {/* <div className="flex items-center gap-1 text-sm">
