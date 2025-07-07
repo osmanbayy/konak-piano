@@ -14,7 +14,7 @@ const Hero = () => {
       <img 
         src="/2.JPG" 
         alt="Loading background" 
-        className="w-full h-full object-cover brightness-50"
+        className="w-full h-full object-cover brightness-50 saturate-200"
       />
     </div>
   );
@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="absolute top-0 left-0 w-full h-full z-0">
         {!isVideoLoaded && <SkeletonLoader />}
         <video
-          className="w-full h-full object-cover brightness-50"
+          className="w-full h-full object-cover brightness-50 saturate-200"
           autoPlay
           loop
           muted

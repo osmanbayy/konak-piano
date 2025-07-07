@@ -26,7 +26,7 @@ const FeaturedDestination = () => {
       viewport={{ once: true }}
       transition={{ duration: 0.6, ease: "easeInOut" }}
     >
-      <div className="flex flex-col items-center px-6 md:px-16 lg:px-24 bg-zinc-800 py-20">
+      <div className="flex flex-col items-center px-6 md:px-16 lg:px-24 bg-zinc-950 py-20">
         <Title
           title={t("featuredRoomsTitle")}
           subTitle={t("featuredRoomsSubtitle")}
@@ -42,7 +42,7 @@ const FeaturedDestination = () => {
             navigate("/odalar");
             scrollTo(0, 0);
           }}
-          className="my-16 px-4 py-2 text-sm font-medium border border-gray-300 rounded bg-zinc-800 text-white/50 hover:bg-gray-600 hover:text-white transition-all cursor-pointer"
+          className="my-16 px-4 py-2 text-sm font-medium border border-gray-300 rounded bg-zinc-800 text-white/50 hover:tracking-wide hover:text-white transition-all cursor-pointer"
         >
           {t("seeAllRoomsButtonText")}
         </button>

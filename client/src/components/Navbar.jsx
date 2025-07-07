@@ -106,7 +106,7 @@ const Navbar = () => {
           <div className="relative" ref={langDropdownRef}>
             <button
               onClick={() => setLangDropdownOpen((prev) => !prev)}
-              className=" flex items-center gap-1 px-3 py-1 rounded text-white/80 bg-transparent hover:bg-gray-600 cursor-pointer"
+              className=" flex items-center gap-1 px-3 py-1 rounded text-white/80 bg-transparent hover:text-rose-500 cursor-pointer transition-all duration-300"
             >
               {currentLang.toUpperCase()}{" "}
               <IoIosArrowDown
@@ -144,7 +144,7 @@ const Navbar = () => {
 
           <button
             onClick={() => setIsContactModalOpen(true)}
-            className="bg-rose-700 text-white px-8 py-2.5 rounded-full ml-4 transition-all duration-500 cursor-pointer"
+            className="bg-rose-700 border border-rose-700 hover:bg-transparent text-white px-8 py-2.5 rounded-full ml-4 transition-all cursor-pointer hover:scale-105"
           >
             {t("getInfoButton")}
           </button>

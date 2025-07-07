@@ -153,7 +153,7 @@ const RoomsByCategory = () => {
 
           {/* Kategori Navigasyon Butonları */}
           {navigationButtons.length > 0 && (
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-16 mb-20">
+            <div className="flex  items-center justify-between gap-4 mt-16 mb-20">
               {navigationButtons.map((button, index) => (
                 <motion.button
                   key={button.name}
@@ -167,7 +167,7 @@ const RoomsByCategory = () => {
                   className="flex items-center gap-3 px-4 py-2 bg-gradient-to-r from-amber-800 to-amber-800 hover:from-rose-600 hover:to-rose-700 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 cursor-pointer"
                 >
                   <span className="text-lg">{button.label}</span>
-                  <FaArrowRight className="text-sm" />
+                  {/* <FaArrowRight className="text-sm" /> */}
                 </motion.button>
               ))}
             </div>

@@ -17,7 +17,7 @@ const HotelCard = ({ room }) => {
         src={room.images[0]}
         alt="room-image"
         loading="lazy"
-        className="transition-all object-cover duration-500 hover:scale-105"
+        className="transition-all object-cover duration-500 hover:scale-105 saturate-200"
       />
 
       <div className="p-4 pt-5">
@@ -45,7 +45,7 @@ const HotelCard = ({ room }) => {
           </p>
           <button
             onClick={() => navigate(`/odalar/kategori/${room.category}`)}
-            className="px-4 py-2 text-sm font-medium border border-gray-300 rounded hover:bg-gray-600 hover:text-white transition-all cursor-pointer"
+            className="px-4 py-2 text-sm font-medium border border-gray-300 rounded-lg hover:text-white transition-all cursor-pointer hover:tracking-wide"
           >
             {t("seeRoomsButton")}
           </button>

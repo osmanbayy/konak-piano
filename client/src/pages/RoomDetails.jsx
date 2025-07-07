@@ -66,7 +66,7 @@ const RoomDetails = () => {
                 src={mainImage}
                 alt="Room Image"
                 loading="lazy"
-                className={`w-full rounded-xl shadow-lg object-cover transition-opacity duration-500 ${
+                className={`w-full rounded-xl shadow-lg object-cover transition-opacity duration-500 saturate-200 ${
                   mainImageLoaded ? "opacity-100" : "opacity-0"
                 }`}
                 onLoad={() => setMainImageLoaded(true)}
@@ -97,7 +97,7 @@ const RoomDetails = () => {
                       onLoad={() =>
                         setLoadedImages((prev) => ({ ...prev, [index]: true }))
                       }
-                      className={`w-full rounded-xl shadow-md object-cover cursor-pointer transition-opacity duration-500 ${
+                      className={`w-full rounded-xl shadow-md object-cover cursor-pointer transition-opacity duration-500 saturate-200 ${
                         loadedImages[index] ? "opacity-100" : "opacity-0"
                       } ${
                         mainImage === image && "outline-3 outline-slate-400"
