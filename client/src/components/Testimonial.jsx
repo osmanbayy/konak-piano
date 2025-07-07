@@ -26,6 +26,7 @@ const TestimonialCard = ({ testimonial }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isShortened, setIsShortened] = useState(true);
   const [shouldShowButton, setShouldShowButton] = useState(false);
+  const [contentHeight, setContentHeight] = useState(0);
   const contentRef = useRef(null);
 
   const { t } = useTranslation();
@@ -33,9 +34,9 @@ const TestimonialCard = ({ testimonial }) => {
   useEffect(() => {
     if (contentRef.current) {
       //Control the content and visible heights of the comment box
-      const contentHeight = contentRef.current.scrollHeight;
-      const visibleHeight = contentRef.current.clientHeight;
-      if (contentHeight > visibleHeight) {
+      const height = contentRef.current.scrollHeight;
+      setContentHeight(height);
+      if (height > 76.8) { // 4.8rem = 76.8px
         setShouldShowButton(true);
       }
     }
@@ -69,9 +70,9 @@ const TestimonialCard = ({ testimonial }) => {
       <div className="text-gray-500 mt-4">
         <p
           ref={contentRef}
-          className="text-sm transition-all duration-300 ease-in-out overflow-hidden"
+          className="text-sm transition-all duration-500 ease-in-out overflow-hidden"
           style={{
-            height: isExpanded ? "auto" : "4.8rem",
+            maxHeight: isExpanded ? `${contentHeight}px` : "4.8rem",
           }}
         >
           "{testimonial.review}"
@@ -80,7 +81,7 @@ const TestimonialCard = ({ testimonial }) => {
         
         {shouldShowButton && (
           <button
-            className="text-indigo-500 mt-2 hover:underline focus:outline-none"
+            className="text-indigo-500 mt-2 hover:underline focus:outline-none transition-colors duration-200"
             onClick={toggleExpanded}
           >
             {isShortened ? t("readMoreButtonText") : t("readLessButtonText")}
