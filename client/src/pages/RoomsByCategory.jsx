@@ -47,9 +47,9 @@ const RoomsByCategory = () => {
                   src={room.images[0]}
                   alt="hotel-image"
                   title="Oda Detaylarını Görüntüle"
-                  className="max-h-65 md:w-1/2 rounded-xl shadow-lg object-cover cursor-pointer"
+                  className="max-h-65 w-88 h-88 rounded-xl shadow-lg object-cover cursor-pointer"
                 />
-                <div className="md:w-1/2 flex flex-col gap-2">
+                <div className="w-full flex flex-col gap-2">
                   <p className="text-white/70 text-xl">
                     {t(room.roomName)}
                     <span className="text-xl text-yellow-500 ml-2">
@@ -65,19 +65,19 @@ const RoomsByCategory = () => {
                   >
                     {t(room.roomType)}
                   </p>
-                  <div className="flex items-center">
+                  {/* <div className="flex items-center">
                     <StarRating />
                     <p className="ml-2 text-gray-400">50+ {t("evaluation")}</p>
-                  </div>
-                  <div className=" flex items-center gap-1 text-gray-500 mt-2 text-sm">
+                  </div> */}
+                  {/* <div className=" flex items-center gap-1 text-gray-500 mt-2 text-sm">
                     <img src={assets.locationIcon} alt="location-icon" />
                     <span>{room.hotel.address}</span>
-                  </div>
+                  </div> */}
                   <div className="flex flex-wrap items-center mt-3 mb-6 gap-2">
                     {room.amenities.map((item, index) => (
                       <div
                         key={index}
-                        className="flex items-center gap-2 px-3 py-2 rounded-lg bg-white/30"
+                        className="flex items-center gap-2 px-3 py-2 rounded-lg bg-white/10"
                       >
                         <img
                           src={facilityIcons[item]}

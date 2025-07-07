@@ -183,7 +183,7 @@ const RoomDetails = () => {
             ))}
           </div>
 
-          <div className="max-w-3xl border-y border-gray-300 my-15 py-10 text-gray-500">
+          <div className="max-w-3xl border-y border-gray-300 my-15 py-10 text-gray-300">
             <p>
               {t(room.roomDescription)}
             </p>
