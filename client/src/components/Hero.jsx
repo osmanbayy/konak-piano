@@ -67,7 +67,7 @@ const Hero = () => {
         >
           <a
             href=""
-            className="mt-10 flex items-center justify-center gap-1 rounded-md bg-rose-700 py-3 px-4 text-white cursor-pointer w-full max-md:mx-auto"
+            className="mt-10 flex items-center justify-center gap-1 rounded-md bg-rose-700 py-3 px-4 text-white cursor-pointer w-full max-md:mx-auto transition duration-300 hover:scale-105"
           >
             <img src={assets.searchIcon} alt="search" className="h-7" />
             <a href="https://tatil.firsatbufirsat.com/otel/konak-piano" target="_blank" rel="noopener noreferrer">{t("reservationButton")}</a>

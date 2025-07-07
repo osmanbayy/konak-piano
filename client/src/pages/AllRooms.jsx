@@ -9,27 +9,69 @@ import { useTranslation } from "react-i18next";
 
 const CheckBox = ({ label, selected = false, onChange = () => {} }) => {
   return (
-    <label className="flex gap-3 items-center cursor-pointer mt-2 text-sm text-white">
-      <input
-        type="checkbox"
-        checked={selected}
-        onChange={(e) => onChange(e.target.checked, label)}
-      />
-      <span className="font-light select-none">{label}</span>
+    <label className="flex gap-3 items-center cursor-pointer mt-2 text-sm text-white group">
+      <div className="relative">
+        <input
+          type="checkbox"
+          checked={selected}
+          onChange={(e) => onChange(e.target.checked, label)}
+          className="sr-only"
+        />
+        <div className={`
+          w-5 h-5 border-2 rounded transition-all duration-200 ease-in-out
+          ${selected 
+            ? 'bg-orange-500 border-orange-500 shadow-lg shadow-orange-500/30' 
+            : 'border-gray-400 hover:border-orange-400 group-hover:border-orange-400'
+          }
+        `}>
+          {selected && (
+            <svg 
+              className="absolute inset-0 w-full h-full text-white" 
+              fill="currentColor" 
+              viewBox="0 0 20 20"
+            >
+              <path 
+                fillRule="evenodd" 
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" 
+                clipRule="evenodd" 
+              />
+            </svg>
+          )}
+        </div>
+      </div>
+      <span className={`font-light select-none transition-colors duration-200 ${selected ? 'text-orange-300' : 'text-white/80 group-hover:text-white'}`}>
+        {label}
+      </span>
     </label>
   );
 };
 
 const RadioButton = ({ label, selected = false, onChange = () => {} }) => {
   return (
-    <label className="flex gap-3 items-center cursor-pointer mt-2 text-sm text-white">
-      <input
-        type="radio"
-        name="sortOption"
-        checked={selected}
-        onChange={() => onChange(label)}
-      />
-      <span className="font-light select-none">{label}</span>
+    <label className="flex gap-3 items-center cursor-pointer mt-2 text-sm text-white group">
+      <div className="relative">
+        <input
+          type="radio"
+          name="sortOption"
+          checked={selected}
+          onChange={() => onChange(label)}
+          className="sr-only"
+        />
+        <div className={`
+          w-5 h-5 border-2 rounded-full transition-all duration-200 ease-in-out flex items-center justify-center
+          ${selected 
+            ? 'border-orange-500 shadow-lg shadow-orange-500/30' 
+            : 'border-gray-400 hover:border-orange-400 group-hover:border-orange-400'
+          }
+        `}>
+          {selected && (
+            <div className="w-2.5 h-2.5 bg-orange-500 rounded-full animate-pulse"></div>
+          )}
+        </div>
+      </div>
+      <span className={`font-light select-none transition-colors duration-200 ${selected ? 'text-orange-300' : 'text-white/80 group-hover:text-white'}`}>
+        {label}
+      </span>
     </label>
   );
 };
