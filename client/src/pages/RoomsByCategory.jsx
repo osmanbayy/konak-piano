@@ -1,9 +1,10 @@
 /* eslint-disable no-unused-vars */
 import { useNavigate, useParams } from "react-router-dom";
 import { assets, facilityIcons, roomsDummyData } from "../assets/assets";
-import StarRating from "../components/StarRating";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
+import { IoSearch } from "react-icons/io5";
 
 const RoomsByCategory = () => {
   const { t } = useTranslation();
@@ -13,6 +14,31 @@ const RoomsByCategory = () => {
   const filteredRooms = roomsDummyData.filter(
     (room) => room.category?.toLowerCase() === category?.toLowerCase()
   );
+
+  // Function for category navigation buttons for UX
+  const getNavigationButtons = () => {
+    const currentCategory = category?.toLowerCase();
+    
+    if (currentCategory === 'standart') {
+      return [
+        { name: 'deluxe', label: `Deluxe ${t('roomsText')}`, path: '/odalar/kategori/deluxe' },
+        { name: 'elite', label: `Elite ${t('roomsText')}`, path: '/odalar/kategori/elite' }
+      ];
+    } else if (currentCategory === 'deluxe') {
+      return [
+        { name: 'standart', label: `Standart ${t('roomsText')}`, path: '/odalar/kategori/standart' },
+        { name: 'elite', label: `Elite ${t('roomsText')}`, path: '/odalar/kategori/elite' }
+      ];
+    } else if (currentCategory === 'elite') {
+      return [
+        { name: 'standart', label: `Standart ${t('roomsText')}`, path: '/odalar/kategori/standart' },
+        { name: 'deluxe', label: `Deluxe ${t('roomsText')}`, path: '/odalar/kategori/deluxe' }
+      ];
+    }
+    return [];
+  };
+
+  const navigationButtons = getNavigationButtons();
 
   return (
     <motion.div
@@ -123,6 +149,28 @@ const RoomsByCategory = () => {
             <p className="mt-10 text-center text-gray-100">
               {t("roomErrorMessage")}
             </p>
+          )}
+
+          {/* Kategori Navigasyon Butonları */}
+          {navigationButtons.length > 0 && (
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-16 mb-20">
+              {navigationButtons.map((button, index) => (
+                <motion.button
+                  key={button.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  onClick={() => {
+                    navigate(button.path);
+                    scrollTo(0, 0);
+                  }}
+                  className="flex items-center gap-3 px-4 py-2 bg-gradient-to-r from-amber-800 to-amber-800 hover:from-rose-600 hover:to-rose-700 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 cursor-pointer"
+                >
+                  <span className="text-lg">{button.label}</span>
+                  <FaArrowRight className="text-sm" />
+                </motion.button>
+              ))}
+            </div>
           )}
         </div>
         {/* <div className="w-60 h-60 bg-rose-500">
